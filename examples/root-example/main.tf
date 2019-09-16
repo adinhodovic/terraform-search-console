@@ -1,9 +1,9 @@
 module "example_com_search_console" {
   source = "github.com/adinhodovic/terraform-search-console"
 
-  cloudflare_domains = [
+  cloudflare_zones = [
     {
-      "domain" : "example.com",
+      "zone" : "example.com",
       "site_verification" : "google-site-verification=14P5CXSZMJhOqwk12lW9CZojRiak2Y8X0nRz7WQ46IKG43E44"
     }
   ]

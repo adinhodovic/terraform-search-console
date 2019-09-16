@@ -1,4 +1,4 @@
-variable "cloudflare_domains" {
+variable "cloudflare_zones" {
   default = []
   type    = list
 }

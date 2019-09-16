@@ -1,8 +1,8 @@
 resource "cloudflare_record" "default" {
-  count  = length(var.cloudflare_domains)
-  domain = lookup(var.cloudflare_domains[count.index], "domain")
+  count  = length(var.cloudflare_zones)
+  domain = lookup(var.cloudflare_zones[count.index], "zone")
   name   = "@"
-  value  = lookup(var.cloudflare_domains[count.index], "site_verification")
+  value  = lookup(var.cloudflare_zones[count.index], "site_verification")
   type   = "TXT"
 }
 
