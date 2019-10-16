@@ -1,7 +1,7 @@
 resource "cloudflare_record" "default" {
   count   = length(var.cloudflare_zones)
   zone_id = lookup(var.cloudflare_zones[count.index], "zone_id")
-  name    = lookup(var.aws_route53_domains[count.index], "name")
+  domain  = lookup(var.cloudflare_zones[count.index], "domain")
   value   = lookup(var.cloudflare_zones[count.index], "site_verification")
   type    = "TXT"
 }
