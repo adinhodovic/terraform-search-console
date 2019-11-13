@@ -1,6 +1,6 @@
 # Terraform-Search-Console Module
 
-Adds a txt record which allows Google Search Engine to verify the domain.
+Wrapper for adding txt records
 
 Cloudflare/Route53(AWS)
 
