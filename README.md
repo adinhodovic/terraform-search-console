@@ -1,4 +1,4 @@
-# Terraform-Search-Console Module
+# Terraform-TXT-Record Module
 
 Wrapper for adding txt records
 
